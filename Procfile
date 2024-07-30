@@ -1,1 +1,1 @@
-web: fastapi dev --port 5432 main.py
+web: fastapi dev --host 0.0.0.0 --port $PORT main.py
