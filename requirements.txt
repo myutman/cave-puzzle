@@ -1,2 +1,2 @@
-justpy
 uvicorn
+fastapi
