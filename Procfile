@@ -1,0 +1,1 @@
+web: fastapi dev --port 5432 main.py
