@@ -22,9 +22,9 @@ def preflight(request: Request, response: Response):
 
 
 @app.get("/gen-cave")
-def build_cave(response: Response):
+def build_cave(field_size: int, response: Response):
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
     response.headers["Access-Control-Allow-Credentials"] = "true"
-    return gen_puzzle(10)
+    return gen_puzzle(field_size)
